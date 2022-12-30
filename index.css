@@ -1,0 +1,87 @@
+html {
+    scroll-behavior:  smooth;
+  }
+*{
+    margin: 0;  
+}
+body{
+    background-image: url("https://img3.wallspic.com/crops/3/6/7/0/80763/80763-ingenieria_electronica-empresa-red_electrica-monocromo-modo_monocromo-1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    
+}
+
+header{
+    background-color: white;
+    padding: 10px 0 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.botones{
+    padding: 10px;
+}
+
+.botones a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+
+.titulo{
+    display: inline-block;
+    margin-top: 200px;
+    margin-left: 100px;
+    text-align: center  ;
+    transition: all .5s;
+}
+.titulo h1{
+    font-size: 80px;
+    background-color: white;
+    padding: 0 30px;
+    
+}
+.titulo h2{
+    background-color: black;
+    color: white;
+    padding: 5px;
+   
+}
+.titulo:hover{
+    font-size: 50px;
+
+}
+.qn{
+    width: 100%;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1000px;
+}
+.QuienesSomos{
+
+    width: 70%;
+    
+
+}
+.QuienesSomos .qst{
+    text-align: center;
+    
+}
+.QuienesSomos .qst h1{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.QuienesSomos .qsst {
+    margin-top: -10px;
+    background-color: white;
+    padding: 30px 20px ;
+}
+
+
