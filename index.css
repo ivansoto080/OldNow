@@ -30,14 +30,17 @@ header{
     margin-left: 15px;
 }
 
-
+header h1 a{
+    text-decoration: none;
+    color: black;
+}
 
 .titulo{
     display: inline-block;
     margin-top: 200px;
     margin-left: 100px;
     text-align: center  ;
-    transition: all .5s;
+    transition: all .3s;
 }
 .titulo h1{
     font-size: 80px;
@@ -60,7 +63,7 @@ header{
     margin-top: 400px;
     display: flex;
     justify-content: center;
-    margin-bottom: 1000px;
+    margin-bottom: 100px;
 }
 .QuienesSomos{
 
@@ -85,3 +88,6 @@ header{
 }
 
 
+@media screen and (min-width: 80rem) {
+    
+  }
