@@ -101,6 +101,65 @@ header h1 a{
     background-image: url(../Media/Lucia.jpeg);
 }
 
+footer{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    color: white;
+}
+footer a{
+    color: #48f
+}
+.f_text{
+    width: 40%;
+    height: 100%;
+
+    display: grid;
+    text-align: center;
+    overflow: hidden;
+}
+.f_text_container{
+    display: block;
+    height: fit-content;
+    margin: auto 0;
+
+}
+.f_redes{
+    width: 30%;
+    height: 100%;
+    display: grid;
+
+
+}
+.f_redes h3{
+    display: inline-block;
+    margin: auto auto;
+}
+
+.f_copy{
+    width: 30%;
+
+    height: 100%;
+    display: grid;
+}
+.f_copy p{
+    display: inline-block;
+    margin: auto auto;
+}
+
+@media screen and (max-width: 580px){
+    .f_text a{
+        font-size: 10px;
+    }
+    .f_redes{
+        font-size: 10px;
+
+    }
+    .f_copy{
+        font-size: 10px;
+    }
+  }
+
 
 @media screen and (max-width: 960px) {
     .targeta{
