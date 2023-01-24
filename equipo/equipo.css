@@ -89,7 +89,7 @@ header h1 a{
     text-align: left;
 }
 #Ivan{
-    background-image: url(../Media/ivansoto.png);
+    background-image: url(../Media/ivan.webp);
 }
 #Paula{
     background-image: url(../Media/Paula.jpeg);
@@ -106,6 +106,7 @@ footer{
     height: 200px;
     display: flex;
     color: white;
+    margin-top: 100px;
 }
 footer a{
     color: #48f
@@ -124,21 +125,27 @@ footer a{
     margin: auto 0;
 
 }
-.f_redes{
+.f_ods{
     width: 30%;
     height: 100%;
     display: grid;
 
 
 }
-.f_redes h3{
+.f_ods h3{
     display: inline-block;
     margin: auto auto;
+    text-align: center;
+}
+.ods_img{
+    margin: 0 auto;
+}
+.ods_img img{
+    height: 90px;
 }
 
 .f_copy{
     width: 30%;
-
     height: 100%;
     display: grid;
 }
@@ -150,13 +157,19 @@ footer a{
 @media screen and (max-width: 580px){
     .f_text a{
         font-size: 10px;
+        display: block;
     }
-    .f_redes{
+    .f_ods{
         font-size: 10px;
 
     }
     .f_copy{
         font-size: 10px;
+    }
+    .ods_img img{
+        height: 42px!important;
+        display: block;
+        margin-top: 3px;
     }
   }
 
@@ -203,6 +216,9 @@ footer a{
         text-align: left;
         font-size: 13px;
     }
+    .ods_img img{
+        height: 70px;
+    }
 }
 @media screen and (max-width: 525px) {
     .targeta{
@@ -245,5 +261,22 @@ footer a{
         padding: 0px 15px 0px;
         text-align: left;
         font-size: 10px;
+    }
+}
+@media screen and (max-width: 510px){
+    .t_text h1{
+        font-size: 13px;
+        padding: 10px 10px;
+    }
+    .t_text h3{
+        padding: 0px 15px 0px;
+        text-align: left;
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 750px){
+
+    .ods_img img{
+        height: 50px;
     }
 }

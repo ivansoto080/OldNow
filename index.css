@@ -1,3 +1,9 @@
+button{
+    outline: 0;
+    border: 0;
+    background-color: #fff;
+}
+
 html {
     scroll-behavior:  smooth;
   }
@@ -23,6 +29,7 @@ header{
 .botones{
     padding: 10px;
     margin: auto 0;
+    text-align: right;
 }
 
 .botones a{
@@ -58,13 +65,45 @@ header h1 a{
 .titulo h2{
     background-color: black;
     color: white;
-    padding: 5px;
+    padding: 5px 50px;
    
 }
 .titulo:hover{
     font-size: 50px;
 
 }
+
+.QueEs{
+    width: 100%;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+}
+.qe_box{
+    width: 70%;
+}
+.qe_box_t{
+    width: 100%;
+    text-align: center;
+}
+.qe_box_t h1{
+    padding: 10px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+.qe_box_st{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: -10px;
+}
+
+
+
+
+
 .qn{
     width: 100%;
     margin-top: 400px;
@@ -92,6 +131,41 @@ header h1 a{
     margin-top: -10px;
     background-color: white;
     padding: 30px 20px ;
+    text-align: center;
+}
+.qs_boton{
+    margin-top: 10px;
+    display: grid;
+    width: 100%;
+}
+.qs_boton_boton{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.qs_boton button{
+    display: inline-block;
+    margin: 10px auto;
+    backdrop-filter: blur(4px);
+    color: white;
+    height: 40px;
+    transition: all .5s;
+    width: 160px;
+    font-size: 15px;
+
+
+}
+.qs_boton button a{
+    color: white;
+    
+}
+.qs_boton button:hover{
+    background-color: black;
+    height: 50px;
+    width: 170px;
+    box-shadow: 0px 0px teal;
+    font-size: 17px;
+
 }
 
 footer{
@@ -101,12 +175,12 @@ footer{
     color: white;
 }
 footer a{
-    color: #48f
+    color: #48f;
 }
 .f_text{
     width: 40%;
     height: 100%;
-
+    overflow: scroll;
     display: grid;
     text-align: center;
     overflow: hidden;
@@ -117,18 +191,24 @@ footer a{
     margin: auto 0;
 
 }
-.f_redes{
+.f_ods{
     width: 30%;
     height: 100%;
     display: grid;
 
 
 }
-.f_redes h3{
+.f_ods h3{
     display: inline-block;
     margin: auto auto;
+    text-align: center   
 }
-
+.ods_img{
+    margin: 0 auto;
+}
+.ods_img img{
+    height: 90px;
+}
 .f_copy{
     width: 30%;
 
@@ -160,20 +240,158 @@ footer a{
         padding: 5px;
        
     }
+
+}
     .titulo:hover{
         font-size: 30px;
     
     }
-  }
+  
   @media screen and (max-width: 580px){
     .f_text a{
         font-size: 10px;
+        display: block;
     }
-    .f_redes{
+    .f_ods{
         font-size: 10px;
 
     }
     .f_copy{
         font-size: 10px;
     }
+    .ods_img img{
+        height: 42px!important;
+        display: block;
+        margin-top: 3px;
+    }
+    .titulo h1{
+        font-size: 50px;
+    }
   }
+  @media screen and (max-width: 945px){
+    .ods_img img{
+        height: 70px;
+    }
+    
+}
+@media screen and (max-width: 750px){
+
+    .ods_img img{
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .titulo h1{
+        font-size: 40px;
+    }
+    .titulo h2{
+        font-size: 22px;
+    }
+    .qs_boton button{
+        display: inline-block;
+        margin: 0 auto;
+        backdrop-filter: blur(4px);
+        color: white;
+        height: 30px;
+        transition: all .5s;
+        width: 130px;
+        font-size: 12px;
+    
+    
+    }
+    .qst h1{
+        font-size: 20px;
+    }
+    .qsst p{
+        font-size: 10px;
+    }
+    .qs_boton button:hover{
+        background-color: black;
+        height: 60px;
+        width: 150px;
+        box-shadow: 0px 0px teal;
+        font-size: 15px;
+    
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .qst{
+        font-size: 12px;
+    }
+    .qsst{
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+
+/**
+Button css
+**/
+
+
+.qs_boton button {
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 30px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.qs_boton button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    white,black,white,black,white,black,white,black
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(10px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.qs_boton button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
