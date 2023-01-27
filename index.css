@@ -101,6 +101,45 @@ header h1 a{
 }
 
 
+.iconos{
+    margin-top: 200px;
+    width: 100%;
+    display: block;
+
+    text-align: center;
+}
+.iconos h1{
+    background-color: black;
+    display: inline-block;
+    margin-bottom: 50px;
+    color: white;
+    padding: 10px;
+}
+.iconos_cont{
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.iconos_i{
+    width: 22%;
+    display: inline-block;
+    justify-content: center;
+    background-color: white;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+.iconos_i img{
+    height: 100px;
+    display: inline-block;
+    margin-top:5px;
+}
+.iconos_i h3{
+    display: inline-block;
+    display: block;
+    margin: 10px 0;
+}
+
 
 
 
@@ -159,14 +198,7 @@ header h1 a{
     color: white;
     
 }
-.qs_boton button:hover{
-    background-color: black;
-    height: 50px;
-    width: 170px;
-    box-shadow: 0px 0px teal;
-    font-size: 17px;
 
-}
 
 footer{
     background-color: black;
@@ -180,16 +212,21 @@ footer a{
 .f_text{
     width: 40%;
     height: 100%;
-    overflow: scroll;
-    display: grid;
     text-align: center;
     overflow: hidden;
+    display: grid;
+}
+.f_text h3{
+    display: inline-block;
+    margin: 20px auto 0;
+    text-align: center;
 }
 .f_text_container{
-    display: block;
-    height: fit-content;
-    margin: auto 0;
 
+}
+.f_text_container p{
+    margin: auto 0;
+    display: inline-block;
 }
 .f_ods{
     width: 30%;
@@ -200,7 +237,7 @@ footer a{
 }
 .f_ods h3{
     display: inline-block;
-    margin: auto auto;
+    margin: 20px auto 0;
     text-align: center   
 }
 .ods_img{
@@ -214,6 +251,11 @@ footer a{
 
     height: 100%;
     display: grid;
+}
+.f_copy h3{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
 }
 .f_copy p{
     display: inline-block;
@@ -239,6 +281,9 @@ footer a{
         color: white;
         padding: 5px;
        
+    }
+    .iconos_i{
+        width: 30%;
     }
 
 }
@@ -267,11 +312,21 @@ footer a{
     .titulo h1{
         font-size: 50px;
     }
+    .iconos_cont{
+        display: grid;
+    }
+    .iconos_i{
+        
+        width: 70%;
+        margin: 15px auto;
+        
+    }
   }
   @media screen and (max-width: 945px){
     .ods_img img{
         height: 70px;
     }
+
     
 }
 @media screen and (max-width: 750px){
@@ -305,14 +360,6 @@ footer a{
     }
     .qsst p{
         font-size: 10px;
-    }
-    .qs_boton button:hover{
-        background-color: black;
-        height: 60px;
-        width: 150px;
-        box-shadow: 0px 0px teal;
-        font-size: 15px;
-    
     }
 
 }
