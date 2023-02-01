@@ -48,17 +48,17 @@ header h1 a{
 }
 .et h1{background-color: white; display: inline-block;padding: 5px 10px;}
 
+
 .targeta{
     margin: 100px auto 0;
-    width: 70%;
+    width: 60%;
     display: flex;
     height: fit-content;
 
 }
 .t_img{
     display: inline-block;
-    width: 40%;
-
+    width: 30%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,23 +70,25 @@ header h1 a{
 
 .t_text{
     margin: 0;
-    display: inline-block;  
-    width: 60%;
+    display: grid;  
+    width: 70%;
     height: 400px;
     overflow: hidden;
-    padding: 0;
+    padding: 0 10px;
     text-align: center;
     background-color: #fff8;
     backdrop-filter: blur(4px);
 
 }
 .t_text h1{
-
-    padding: 15px 15px;
+    margin-top: 20px;
+    padding: 0 15px;
 }
 .t_text h3{
-    padding: 0px 15px 0px;
+    margin-top: -20px;
+    padding: 0px 0px 0px;
     text-align: left;
+    display: inline-block;
 }
 #Ivan{
     background-image: url(../Media/ivan.webp);
@@ -95,10 +97,11 @@ header h1 a{
     background-image: url(../Media/Paula.jpeg);
 }
 #Alba{
-    background-image: url(../Media/Alba.jpeg);
+    background-image: url(../Media/image_6487327.JPG);
+    background-position: left;
 }
 #Lucia{
-    background-image: url(../Media/Lucia.jpeg);
+    background-image: url(../Media/image_6487327\ \(1\).JPG);
 }
 
 footer{
@@ -114,15 +117,18 @@ footer a{
 .f_text{
     width: 40%;
     height: 100%;
-
     display: grid;
     text-align: center;
     overflow: hidden;
 }
+.f_text h3{
+    display: inline-block;
+    margin: 20px auto 0;
+    text-align: center;
+}
 .f_text_container{
-    display: block;
+    display: inline-block;
     height: fit-content;
-    margin: auto 0;
 
 }
 .f_ods{
@@ -134,8 +140,8 @@ footer a{
 }
 .f_ods h3{
     display: inline-block;
-    margin: auto auto;
-    text-align: center;
+    margin: 20px auto 0;
+    text-align: center   
 }
 .ods_img{
     margin: 0 auto;
@@ -143,15 +149,19 @@ footer a{
 .ods_img img{
     height: 90px;
 }
-
 .f_copy{
     width: 30%;
+
     height: 100%;
     display: grid;
 }
+.f_copy h3{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
 .f_copy p{
     display: inline-block;
-    margin: auto auto;
 }
 
 @media screen and (max-width: 580px){
@@ -198,11 +208,10 @@ footer a{
     
     .t_text{
         margin: 0;
-        display: inline-block;  
         width: 70%;
         height: 200px;
         overflow: hidden;
-        padding: 0;
+        padding: 0 10px;
         text-align: center;
         background-color: #fff8;
         backdrop-filter: blur(4px);
@@ -210,12 +219,12 @@ footer a{
     }
     .t_text h1{
         font-size: 20px;
-        padding: 15px 15px;
+        margin-top: 10px;
     }
     .t_text h3{
-        padding: 0px 15px 0px;
+        margin-top: -20px;
         text-align: left;
-        font-size: 13px;
+        font-size: 1.7vw;
     }
     .ods_img img{
         height: 70px;
@@ -244,7 +253,6 @@ footer a{
     
     .t_text{
         margin: 0;
-        display: inline-block;  
         width: 70%;
         height: 150px;
         overflow: hidden;
@@ -256,28 +264,28 @@ footer a{
     }
     .t_text h1{
         font-size: 15px;
-        padding: 15px 15px;
     }
     .t_text h3{
         padding: 0px 15px 0px;
         text-align: left;
-        font-size: 10px;
+        font-size: 1.8vw;
     }
 }
-@media screen and (max-width: 510px){
-    .t_text h1{
-        font-size: 13px;
-        padding: 10px 10px;
-    }
-    .t_text h3{
-        padding: 0px 15px 0px;
-        text-align: left;
-        font-size: 9px;
-    }
-}
+
 @media screen and (max-width: 750px){
 
     .ods_img img{
         height: 50px;
     }
 }
+@media screen and (max-width: 350px){
+    .t_text h3{
+        font-size: 2vw;
+    }
+
+
+}
+
+
+
+

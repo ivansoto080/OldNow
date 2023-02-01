@@ -105,7 +105,6 @@ header h1 a{
     margin-top: 200px;
     width: 100%;
     display: block;
-
     text-align: center;
 }
 .iconos h1{
@@ -128,6 +127,7 @@ header h1 a{
     background-color: white;
     margin: 0 5px;
     border-radius: 10px;
+    padding: 10px;
 }
 .iconos_i img{
     height: 100px;
@@ -138,6 +138,7 @@ header h1 a{
     display: inline-block;
     display: block;
     margin: 10px 0;
+
 }
 
 
@@ -145,9 +146,9 @@ header h1 a{
 
 .qn{
     width: 100%;
-    margin-top: 400px;
+    margin-top: 200px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     margin-bottom: 100px;
 }
 .QuienesSomos{
@@ -221,9 +222,7 @@ footer a{
     margin: 20px auto 0;
     text-align: center;
 }
-.f_text_container{
 
-}
 .f_text_container p{
     margin: auto 0;
     display: inline-block;
@@ -259,7 +258,6 @@ footer a{
 }
 .f_copy p{
     display: inline-block;
-    margin: auto auto;
 }
 
 @media screen and (max-width: 720px) {
