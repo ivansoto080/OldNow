@@ -91,17 +91,17 @@ header h1 a{
     display: inline-block;
 }
 #Ivan{
-    background-image: url(../Media/ivan.webp);
+    background-image: url(../Media/Ivan.webp);
 }
 #Paula{
-    background-image: url(../Media/Paula.jpeg);
+    background-image: url(../Media/Paula.webp);
 }
 #Alba{
-    background-image: url(../Media/image_6487327.JPG);
+    background-image: url(../Media/Alba.webp);
     background-position: left;
 }
 #Lucia{
-    background-image: url(../Media/image_6487327\ \(1\).JPG);
+    background-image: url(../Media/Lucia.webp);
 }
 
 footer{
