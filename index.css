@@ -20,12 +20,20 @@ body{
     
 }
 
+/* Header */
+
 header{
     background-color: white;
     padding: 10px 0 10px 30px;
     display: flex;
     justify-content: space-between;
 }
+header .izda img{
+    width: 60px; 
+    display: inline-block; 
+    margin: -5px 0 0 -25px;
+}
+
 .botones{
     padding: 10px;
     margin: auto 0;
@@ -43,6 +51,9 @@ header h1 a{
     text-decoration: none;
     color: black;
 }
+
+/* titulo desplegable */
+
 .t{
     display: block;
     margin-top: calc(20%);
@@ -69,22 +80,25 @@ header h1 a{
    
 }
 .titulo:hover{
-    font-size: 50px;
+    font-size: 40px;
 
 }
+
+
+/* sección que es oldnow */
 
 .QueEs{
     width: 100%;
     margin-top: 400px;
-    display: flex;
     justify-content: center;
+    display: grid;
 }
-.qe_box{
-    width: 70%;
-}
+
 .qe_box_t{
     width: 100%;
     text-align: center;
+    display: block;
+    z-index: 10;
 }
 .qe_box_t h1{
     padding: 10px;
@@ -93,12 +107,17 @@ header h1 a{
     color: white;
 }
 .qe_box_st{
-    width: 100%;
+    margin: 0 auto;
+    width: 70%;
     background-color: white;
     text-align: center;
-    padding: 50px 0;
+    display: inline-block;
+    padding: 50px 10px;
     margin-top: -10px;
+    z-index: 9;
 }
+
+/* sección de caracteristicas de la aplicación */
 
 
 .iconos{
@@ -141,8 +160,24 @@ header h1 a{
 
 }
 
+/*Sección del video*/
+.nuestrovideo{
+    display: grid;
+}
+.nuestrovideo h1{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: 100px auto 50px;
+    padding: 10px;
+}
+.nuestrovideo video{
+    margin: 0 auto;
+    width: 50%;
+}
 
 
+/* sección de quienes somos (integrantes del equipo) */
 
 .qn{
     width: 100%;
@@ -200,6 +235,8 @@ header h1 a{
     
 }
 
+
+/* pie de página */
 
 footer{
     background-color: black;
@@ -260,6 +297,9 @@ footer a{
     display: inline-block;
 }
 
+
+/* código responsive */
+
 @media screen and (max-width: 720px) {
     .t{display: grid;}
     .titulo{
@@ -284,13 +324,18 @@ footer a{
         width: 30%;
     }
 
-}
-    .titulo:hover{
-        font-size: 30px;
-    
+    .f_copy p{
+        font-size: 11px;
     }
+}
+
   
   @media screen and (max-width: 580px){
+
+    .f_text{
+        font-size: 10px;
+    }
+
     .f_text a{
         font-size: 10px;
         display: block;
@@ -325,7 +370,9 @@ footer a{
         height: 70px;
     }
 
-    
+    .nuestrovideo video{
+        width: 70%;
+    }
 }
 @media screen and (max-width: 750px){
 
@@ -369,6 +416,21 @@ footer a{
     .qsst{
         font-size: 12px;
     }
+    .qe_box_t h1{
+        font-size: 23px;
+    }
+    .botones{
+        font-size: 11px;
+    }
+    header .izda h1{
+        font-size: 15px;
+    }
+    header .izda img{
+        width: 40px;
+        margin: 0px 0 0 -25px;
+    }
+
+
 
 }
 

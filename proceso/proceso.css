@@ -1,0 +1,197 @@
+html {
+    scroll-behavior:  smooth;
+  }
+*{
+    margin: 0;  
+    text-decoration: none;
+}
+body{
+    background-image: url(../Media/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    
+}
+
+/* Header */
+
+header{
+    background-color: white;
+    padding: 10px 0 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+header .izda img{
+    width: 60px; 
+    display: inline-block; 
+    margin: -5px 0 0 -25px;
+}
+.botones{
+    padding: 10px;
+    margin: auto 0;
+    text-align: right;
+}
+
+.botones a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*  */
+
+.titulo{
+    display: block;
+    margin-top: 150px;
+    z-index: 10;
+    text-align: center;
+}
+.titulo h1{
+    color: white;
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
+}
+
+.contenedor{
+    padding: 30px 30px 100px;
+    width: 70%;
+
+    margin: 0 auto 100px;
+    background-color: #fff8;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+
+}
+
+
+
+
+/* pie de página*/
+footer{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    color: white;
+}
+footer a{
+    color: #48f;
+}
+.f_text{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: grid;
+}
+.f_text h3{
+    display: inline-block;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.f_text_container p{
+    margin: auto 0;
+    display: inline-block;
+}
+.f_ods{
+    width: 30%;
+    height: 100%;
+    display: grid;
+
+
+}
+.f_ods h3{
+    display: inline-block;
+    margin: 20px auto 0;
+    text-align: center   
+}
+.ods_img{
+    margin: 0 auto;
+}
+.ods_img img{
+    height: 90px;
+}
+.f_copy{
+    width: 30%;
+
+    height: 100%;
+    display: grid;
+}
+.f_copy h3{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.f_copy p{
+    display: inline-block;
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    .botones{
+        font-size: 11px;
+    }
+    header .izda h1{
+        font-size: 15px;
+    }
+    header .izda img{
+        width: 40px;
+        margin: 0px 0 0 -25px;
+    }
+}
+  
+
+  @media screen and (max-width: 945px){
+    .ods_img img{
+        height: 70px;
+    }
+
+    
+}
+@media screen and (max-width: 750px){
+
+    .ods_img img{
+        height: 50px;
+    }
+    .f_copy p{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .f_text{
+        font-size: 10px;
+    }
+
+    .f_text a{
+        font-size: 10px;
+        display: block;
+    }
+    .f_ods{
+        font-size: 10px;
+
+    }
+    .f_copy{
+        font-size: 10px;
+    }
+    .ods_img img{
+        height: 42px!important;
+        display: block;
+        margin-top: 3px;
+    }
+    .titulo h1{
+        font-size: 21px;
+    }
+  }
+

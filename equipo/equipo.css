@@ -19,6 +19,11 @@ header{
     display: flex;
     justify-content: space-between;
 }
+header .izda img{
+    width: 60px; 
+    display: inline-block; 
+    margin: -5px 0 0 -25px;
+}
 header h1 a{
     text-decoration: none;
     color: black;
@@ -164,7 +169,23 @@ footer a{
     display: inline-block;
 }
 
+@media screen and (max-width: 500px){
+    .botones{
+        font-size: 11px;
+    }
+    header .izda h1{
+        font-size: 15px;
+    }
+    header .izda img{
+        width: 40px;
+        margin: 0px 0 0 -25px;
+    }
+}
+
 @media screen and (max-width: 580px){
+    .f_text{
+        font-size: 10px;
+    }
     .f_text a{
         font-size: 10px;
         display: block;
@@ -276,6 +297,9 @@ footer a{
 
     .ods_img img{
         height: 50px;
+    }
+    .f_copy p{
+        font-size: 11px;
     }
 }
 @media screen and (max-width: 350px){
