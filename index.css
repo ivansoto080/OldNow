@@ -171,9 +171,11 @@ header h1 a{
     margin: 100px auto 50px;
     padding: 10px;
 }
-.nuestrovideo video{
+.nuestrovideo iframe{
     margin: 0 auto;
-    width: 50%;
+    width: 65%;
+    aspect-ratio: 16/9;
+   
 }
 
 
@@ -348,7 +350,7 @@ footer a{
         font-size: 10px;
     }
     .ods_img img{
-        height: 42px!important;
+        height: 60px!important;
         display: block;
         margin-top: 3px;
     }
