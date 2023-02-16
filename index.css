@@ -110,9 +110,42 @@ header h1 a{
     margin: 0 auto;
     width: 70%;
     background-color: white;
-    text-align: center;
+    text-align: justify;
     display: inline-block;
-    padding: 50px 10px;
+    padding: 50px 20px;
+    margin-top: -10px;
+    z-index: 9;
+}
+
+/* resumen*/
+
+.resumen{
+    width: 100%;
+    margin-top: 400px;
+    justify-content: center;
+    display: grid;
+}
+
+.r_t{
+    width: 100%;
+    text-align: center;
+    display: block;
+    z-index: 10;
+}
+.r_t h1{
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+.r_st{
+    margin: 0 auto;
+    width: 70%;
+    background-color: white;
+    text-align: justify;
+    display: inline-block;
+    padding: 50px 20px;
     margin-top: -10px;
     z-index: 9;
 }
@@ -191,6 +224,7 @@ header h1 a{
 .QuienesSomos{
 
     width: 70%;
+    justify-content: center;
     
 
 }
@@ -208,7 +242,7 @@ header h1 a{
     margin-top: -10px;
     background-color: white;
     padding: 30px 20px ;
-    text-align: center;
+    text-align: justify;
 }
 .qs_boton{
     margin-top: 10px;
